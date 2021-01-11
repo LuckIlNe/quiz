@@ -1,0 +1,133 @@
+html,
+body {
+  background-color: rgb(38, 119, 38);
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif; 
+  font-size: 16px;
+  line-height: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  width: 150px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+
+.root {
+  height: 70vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  background-image: url("/image/pink.jpg");
+}
+
+.container {
+  position: relative;
+  flex-grow: 0;
+  max-width: 800px;
+  margin: 27px 25px 18px 25px;
+  padding: 27px 25px 18px 25px;
+  background: #fff;
+  border-radius: 4px;
+}
+@media only screen and (min-width:32em) {
+  .back-container {
+    display: block;
+  }
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  line-height: 27px;
+  margin: 0 0 18px;
+  padding: 0;
+}
+
+.main-header {
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.main-body {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.str-btn {
+  align-items: center;
+  text-align: center;
+  overflow: visible;
+}
+
+.next-btn {
+  align-items: center;
+  text-align: end;
+  overflow: visible;
+  margin: 5px;
+}
+
+.quiz-body {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.quiz-counter {
+  text-align: end;
+  overflow: visible;
+  margin: 5px;
+}
+
+.quiz-question {
+  
+}
+
+.quiz-answers {
+  
+}
+
+.answer {
+  
+}
+
+.next-btn {
+
+}
+
+.result-btn {
+
+}
+
+.quiz-answer {
+
+}
