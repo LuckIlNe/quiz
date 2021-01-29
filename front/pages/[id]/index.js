@@ -12,7 +12,7 @@ export async function  getServerSideProps({query}) {
     }
   }; // you can now access this as this.props.query in your page
 }
-*/
+
 
 export async function getStaticPaths() {
   // Return a list of possible value for id
@@ -34,7 +34,7 @@ export async function getStaticProps({ params }) {
     }
   }
 }
-
+*/
 export default class extends Component {
   render () {
     return (
