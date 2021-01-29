@@ -33,7 +33,7 @@ class Quiz extends Component {
         this.state = {
             questionCounter: 1,
             questionId: 1, 
-            question: '1st q',
+            question: ["1st q", "2st q", "3st q"][0],
             answerOptions: [],
             allQuestions: ["1st q", "2st q", "3st q"],
             answer: '',
@@ -78,6 +78,11 @@ class Quiz extends Component {
                     </div>
                     <div className="quiz-answer">
                         здесть находятся вопросы
+                        <ul>
+                          {[1,2,3,4].map((el) => (
+                            <li>{el}</li>
+                          ))}
+                        </ul>
                     </div>
                     <div className="next-btn" >
                         {this.state.questionCounter < this.state.allQuestions.length && this.answerSelected ? <button onClick={this.onIncrement}>Дальше</button> : <div></div>}
