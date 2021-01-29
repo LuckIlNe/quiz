@@ -21,7 +21,7 @@ class StartBtn extends Component {
         return (
             <>
             <div className="str-btn">
-                <button  type="button" onClick={() => Router.push('/test')} >
+                <button  type="button" onClick={() => Router.push('${id}/test')} >
                     Начать!
                 </button>
             </div>
@@ -49,7 +49,7 @@ export default class Main extends Component {
                             Добро пожаловать на тест от компании Давида, тут всякое описание и тому подобное теста, возможно пару щуток и лаконичное подытоживание 
                             балабалабала балабалабала балабалабала балабалабала балабалабала балабалабала балабалабала балабалабала балабалабала балабалабала балабалабала балабалабала
                         </div>
-                        <StartBtn/>
+                        <StartBtn id={id}/>
                     </div>
                 </div>
             </div>
