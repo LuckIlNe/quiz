@@ -15,13 +15,15 @@ class Welcome extends Component {
 
 
 
-
+// todo redirect for id
 class StartBtn extends Component {
     render() {
+        const id = this.props.id
+        console.log(this.props)
         return (
             <>
             <div className="str-btn">
-                <button  type="button" onClick={() => Router.push('${id}/test')} >
+                <button  type="button" onClick={() => Router.push('/' + id + '/test')} > 
                     Начать!
                 </button>
             </div>
@@ -33,10 +35,9 @@ class StartBtn extends Component {
 
 export default class Main extends Component {
 
-    
     render() {
         const id = this.props.id
-        console.log(this.props.props)
+        console.log(this.props)
         return (
             <div className="root">
                 <div className="back-container">
